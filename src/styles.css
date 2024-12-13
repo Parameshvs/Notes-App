@@ -1,0 +1,170 @@
+/* Global Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #4a90e2;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3578e5;
+  }
+  
+  /* Flexbox Layout for Notes */
+  .app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+  }
+  
+  .note-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4a90e2;
+  }
+  
+  /* Notes Card Styles */
+  .note-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .note-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .note-card h3 {
+    font-size: 1.25rem;
+    color: #4a90e2;
+    margin-bottom: 8px;
+  }
+  
+  .note-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .note-card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .note-card-actions button {
+    background-color: #e24a4a;
+  }
+  
+  .note-card-actions button:hover {
+    background-color: #d23f3f;
+  }
+  
+  /* Form Styles for Adding/Editing Notes */
+  .note-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note-form input,
+  .note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .note-form textarea {
+    height: 150px;
+  }
+  
+  .note-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .note-form button:hover {
+    background-color: #3578e5;
+  }
+  
+  /* Search Bar Styles */
+  .search-bar {
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .search-bar input:focus {
+    border-color: #4a90e2;
+  }
+  
